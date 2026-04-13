@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱是和平</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        lavender: { 50: '#FAF5FF', 100: '#F3E8FF', 200: '#E9D5FF', 300: '#D8B4FE', 400: '#C084FC', 500: '#A855F7' },
+                        pink: { 50: '#FDF2F8', 100: '#FCE7F3', 200: '#FBCFE8', 300: '#F9A8D4', 400: '#F472B6', 500: '#EC4899' },
+                        soft: { 50: '#FDFCF9' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Noto Serif SC', serif; }
+        .font-serif-cn { font-family: 'Noto Serif SC', serif; }
+        .bg-gradient-soft { background: linear-gradient(135deg, #FAF5FF 0%, #FDF2F8 50%, #FDFCF9 100%); }
+        .divider { height: 1px; background: linear-gradient(90deg, transparent, #E9D5FF, transparent); }
+        .fade-in { animation: fadeIn 0.8s ease forwards; opacity: 0; transform: translateY(16px); }
+        .fade-in-delay-1 { animation-delay: 0.2s; }
+        .fade-in-delay-2 { animation-delay: 0.4s; }
+        .fade-in-delay-3 { animation-delay: 0.6s; }
+        @keyframes fadeIn { to { opacity: 1; transform: translateY(0); } }
+        .card-shadow { box-shadow: 0 10px 40px rgba(168, 85, 247, 0.08); }
+    </style>
+</head>
+<body class="bg-gradient-soft min-h-screen">
+    <div class="max-w-lg mx-auto px-5 py-10 pb-16">
+        <header class="text-center mb-8 fade-in">
+            <div class="inline-flex items-center gap-2 mb-4 text-lavender-400 text-xs tracking-[0.3em] uppercase">
+                <span>天然石编绳饰品</span>
+            </div>
+            <h1 class="font-serif-cn text-3xl font-bold text-gray-700 mb-2">爱是和平</h1>
+            <div class="w-16 h-0.5 bg-gradient-to-r from-lavender-300 to-pink-300 mx-auto rounded-full"></div>
+        </header>
+
+        <div class="mb-10 fade-in fade-in-delay-1">
+            <div class="rounded-3xl overflow-hidden card-shadow">
+                <div class="aspect-square bg-gradient-to-br from-lavender-100 via-pink-100 to-soft-50 flex items-center justify-center">
+                    <div class="text-center">
+                        <svg class="w-20 h-20 mx-auto text-lavender-300 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                        <p class="text-lavender-400 text-sm font-serif-cn">你若盛开 · 蝴蝶自来</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider mb-10"></div>
+
+        <section class="mb-9 fade-in fade-in-delay-2">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 rounded-2xl bg-lavender-100 flex items-center justify-center">
+                    <svg class="w-5 h-5 text-lavender-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                    </svg>
+                </div>
+                <h2 class="font-serif-cn text-lg font-bold text-gray-700">原材料</h2>
+            </div>
+            <div class="bg-white/50 backdrop-blur-sm rounded-2xl p-5 ml-0 border border-white/60">
+                <p class="text-gray-600 leading-relaxed font-serif-cn">天然水晶，每一颗都历经亿万年时光沉淀，蕴含着大地的能量与智慧。水晶通透而纯净，如同内心深处最柔软的部分，带着宁静与治愈的力量。</p>
+            </div>
+        </section>
+
+        <section class="mb-9 fade-in fade-in-delay-3">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 rounded-2xl bg-pink-100 flex items-center justify-center">
+                    <svg class="w-5 h-5 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                    </svg>
+                </div>
+                <h2 class="font-serif-cn text-lg font-bold text-gray-700">设计理念</h2>
+            </div>
+            <div class="bg-white/50 backdrop-blur-sm rounded-2xl p-5 ml-0 border border-white/60">
+                <p class="text-gray-600 leading-relaxed font-serif-cn">爱是和平。当我们的内心充满爱，世界便充满和平。这款作品以柔和的线条编织，象征着人与人之间温暖的连结。愿每一位佩戴者，都能在水晶的陪伴下，收获内心的宁静与平和，让爱如同涟漪般在生命中蔓延。</p>
+            </div>
+        </section>
+
+        <div class="divider my-10"></div>
+
+        <footer class="text-center fade-in fade-in-delay-3">
+            <p class="text-gray-300 text-xs tracking-widest">— 以手作心 · 以石为友 —</p>
+        </footer>
+    </div>
+</body>
+</html>
